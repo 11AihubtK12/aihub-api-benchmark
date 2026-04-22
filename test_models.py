@@ -6,11 +6,9 @@ API_KEY = "API_KEY"
 BASE_URL = "https://aihubapi.xyz/v1"
 
 models = [
-    "gpt-4o-mini",
-    "gpt-4",
-    "claude-3-haiku",
+    "qwen-max",
+    "qwen-plus",
     "qwen-turbo",
-    "doubao",
 ]
 
 test_prompt = "Hello, reply a short sentence."
@@ -28,12 +26,12 @@ for model in models:
             json={
                 "model": model,
                 "messages": [{"role": "user", "content": test_prompt}],
-                "temperature": 0.7
-            },
-            timeout=20
-        )
-        end = time.time()
-        speed = round(end - start, 2)
+                "temperature": 0.7"temperature": 0.7
+            },},
+            超时=2020
+        ）)
+        end = time.time()time()
+        速度 = round(end - start, 2)round(end - start, 2)
 
         if resp.status_code == 200:
             data = resp.json()
