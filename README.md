@@ -25,18 +25,19 @@ client = OpenAI(
 
 response = client.chat.completions.create(
     model="gpt-4o-mini",
-    messages=[{"role": "user", "content": "Hello, AIHub!"}]
+    消息=[{"角色": "用户", "内容": "你好，AIHub!"}]
 )
 
-print(response.choices[0].message.content)
+打印响应的选择[0].消息内容)
 ```
 
-### Curl Example
+### CURL 示例
 ```bash
-curl https://aihubapi.xyz/v1/chat/completions \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
+curl https://aihubapi.xyz/v1/chat/completions
+  -H "Content-Type: application/json"
+  -H "Authorization: Bearer YOUR_API_KEY"
   -d '{
+
     "model": "gpt-4o-mini",
     "messages": [{"role": "user", "content": "Hello, AIHub!"}]
   }'
@@ -85,14 +86,14 @@ A: New users get 100 requests per minute by default. Contact us for higher limit
 ### Q: What payment methods do you support?
 A: We support PayPal, credit cards and all major international payment methods.
 
-### Q: Is there a free trial?
+    
 A: Yes! New users get free trial credits upon registration, no credit card required.
 
 ---
 
 ## 📞 Contact Us
 - Official Website: [https://aihubapi.xyz](https://aihubapi.xyz)
-- Email: support@aihubapi.xyz
+- Email: 3351759632@qq.com
 - Discord: [Join our community](https://discord.gg/aihub)
 
 ---
